@@ -1,0 +1,91 @@
+ 
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+    <head>
+        <!-- Metas -->
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!-- force le mode de document de IE a la derniere version -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <link href="http://r.ccm2.net/common/style/reset.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="http://r.ccm2.net/common/style/grid.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="http://r.ccm2.net/common/style/content.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="http://r.ccm2.net/common/style/common.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="http://r.ccm2.net/common/style/jquery-ui.css" type="text/css" rel="stylesheet" media="screen" />
+
+
+        <!-- Stylesheets -->
+
+        <link href="http://r.ccm2.net/linternaute/style/layout.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="http://r.ccm2.net/linternaute/style/content.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="http://r.ccm2.net/linternaute/style/mod.css" type="text/css" rel="stylesheet" media="screen" />       
+
+        <style type="text/css">
+            body{
+                background: rgb(241,241,241);
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YxZjFmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmOGY5ZmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top,  rgba(241,241,241,1) 0%, rgba(248,249,251,1) 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,241,1)), color-stop(100%,rgba(248,249,251,1)));
+                background: -webkit-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(248,249,251,1) 100%);
+                background: -o-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(248,249,251,1) 100%);
+                background: -ms-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(248,249,251,1) 100%);
+                background: linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(248,249,251,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#f8f9fb',GradientType=0 );
+            }
+
+            .ie9 body{filter:none}
+            .body{margin-top:60px;margin-bottom:60px}
+            .errorContent{  
+                color:#000;
+                -webkit-box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 0.1);
+                overflow:hidden;position:relative;
+                padding:100px 70px 0 20px;
+            }
+            .errorContent img{float:right;margin-left:20px}
+            .errorContent h1{font-size:38px}
+            .errorContent h1 sup{color:#000}
+            .errorContent p{font-size:20px}
+            .errorContent em{
+                position:absolute;bottom:20px;left:20px;
+                font-size:12px;color:#666;font-style:normal
+            }
+
+        </style>
+
+        <title>Erreur!</title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="body">
+            <div class="page">
+                <!-- centre -->
+                <div class="line pad20">
+                    <div class="errorContent">
+                        <img src="http://r.ccm2.net/common/img/illustration-503.png" />
+                        <h1 class="marB10">Le site est temporairement inaccessible<sup>*</sup></h1>
+                        <p>Nos techniciens mettent tout en &oelig;uvre pour r&eacute;soudre rapidement ce probl&egrave;me technique</p>
+                        <em>* 503 Service Unavailable  (green) </em>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
